@@ -17,7 +17,7 @@ def hcf( x, y ):
     
         smaller = x
 
-    #-- END check to find slmaller number --#
+    #-- END check to find smaller number --#
 
     # loop over integers from 1 to the smaller number.
     for i in range( 1, smaller + 1 ):
@@ -61,7 +61,8 @@ countof_list=0
 for i in num_list:
 	sumof_list= sumof_list+num_list[i-1]
 	countof_list=countof_list+1
-
+	
+# End the loop
 
 #Divide the sum by the count to get the mean
 #Cast variables as floats to avoid integer arithmetic (i.e. dropping the decimals)
@@ -82,7 +83,7 @@ print ("III. Advanced\n")
 # Translate the binary search algorithm from PHP to Python
 
 
-#define a function
+#define a function for a comparative binary search
 def binary_search(x, lista, left, right):
 	if left> right:
 		return -1
@@ -95,7 +96,7 @@ def binary_search(x, lista, left, right):
 	if lista[mid] < x:
 		return binary_search(x, lista, mid+1, right)
 
-
+#define second function for an iterative binary search
 def iterative_binary_search(x, lista):
 	left=0
 	right=len(lista)-1
